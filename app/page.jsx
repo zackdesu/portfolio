@@ -7,9 +7,9 @@ const Page = () => {
   return (
     <div>
       <div className="flex flex-col items-center justify-center h-[85vh] mt-6">
-        <p>Let's start</p>
+        <p>Let&apos;s start</p>
         <h1>
-          Hello! I'm{" "}
+          Hello! I&apos;m{" "}
           <span className="text-cyan-600 dark:text-cyan-300">Zack</span>
         </h1>
         <h1>A Front-end Web Developer</h1>
