@@ -13,7 +13,7 @@ const Page = () => {
           <span className="text-cyan-600 dark:text-cyan-300">Zack</span>
         </h1>
         <h1>A Front-end Web Developer</h1>
-        <p className="max-w-xl mt-4 text-center">
+        <p className="max-w-xl mt-4 mx-8 text-center">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ex
           natus sed aliquam ad sit! Laudantium, blanditiis! Error praesentium
           ratione repellat velit amet quo voluptate aliquid.

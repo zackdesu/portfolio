@@ -29,7 +29,7 @@ const ToggleSwitch = () => {
   return (
     <>
       <input type="checkbox" id="switch" onChange={handleIsOn} checked={isOn} />
-      <label htmlFor="switch" className="-mr-10">
+      <label htmlFor="switch" className="md:-mr-10">
         Toggle
       </label>
     </>

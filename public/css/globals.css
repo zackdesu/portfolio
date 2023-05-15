@@ -4,7 +4,12 @@
 
 @layer base {
   body {
-    @apply bg-neutral-100 text-black dark:bg-neutral-900 dark:text-white;
+    @apply bg-neutral-100 text-black dark:bg-neutral-900 dark:text-white transition-colors duration-200;
+  }
+
+  html * {
+    @apply transition-colors duration-200;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1);
   }
 
   h1,
@@ -23,8 +28,13 @@
   }
 
   li {
-    @apply cursor-pointer;
+    @apply cursor-pointer text-xs sm:text-sm md:text-base;
   }
+
+  p {
+    @apply text-xs md:text-base;
+  }
+
   button {
     @apply shadow-xl shadow-gray-400 rounded-xl;
   }
