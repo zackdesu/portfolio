@@ -33,7 +33,7 @@ label:after {
 }
 
 input:checked + label {
-  background: rgb(23, 23, 23);
+  background: #27272a;
 }
 
 input:checked + label:after {

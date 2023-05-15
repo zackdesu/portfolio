@@ -39,3 +39,7 @@
     @apply shadow-xl shadow-gray-400 rounded-xl;
   }
 }
+
+body {
+  height: 2000px;
+}
