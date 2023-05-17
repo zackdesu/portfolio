@@ -48,7 +48,7 @@ const Home = () => {
         </li>
         <li className={className}>
           <Link href="https://instagram.com/zackdesu" target={"_blank"}>
-            <FiInstagram className="text-[22px] m-4 lg:text-[30px]" />
+            <FiInstagram className="text-[22px] m-3 lg:m-4 lg:text-[30px]" />
           </Link>
         </li>
       </ul>
