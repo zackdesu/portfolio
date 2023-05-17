@@ -37,18 +37,18 @@ const Home = () => {
       <ul className="flex my-3">
         <li className={className}>
           <Link href="https://github.com/zackdesu" target={"_blank"}>
-            <FiGithub className="text-[22px] m-3 lg:text-[30px]" />
+            <FiGithub className="text-[22px] m-3 lg:m-4 lg:text-[30px]" />
           </Link>
         </li>
         <li className={className}>
-          <FiFacebook className="text-[22px] m-3 lg:text-[30px]" />
+          <FiFacebook className="text-[22px] m-3 lg:m-4 lg:text-[30px]" />
         </li>
         <li className={className}>
-          <BsDiscord className="text-[22px] m-3 lg:text-[30px]" />
+          <BsDiscord className="text-[22px] m-3 lg:m-4 lg:text-[30px]" />
         </li>
         <li className={className}>
           <Link href="https://instagram.com/zackdesu" target={"_blank"}>
-            <FiInstagram className="text-[22px] m-3 lg:text-[30px]" />
+            <FiInstagram className="text-[22px] m-4 lg:text-[30px]" />
           </Link>
         </li>
       </ul>
