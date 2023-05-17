@@ -30,9 +30,9 @@ const Home = () => {
       </h1>
       <h1 className="font-Josefin">A Front-end Web Developer</h1>
       <p className="max-w-xl xl:max-w-2xl mt-2 mx-8 text-center">
-        I'm a Front-end Web Developer. I'm {years} years old. I just started
-        programming for {months} months ago. Currently, I'm learning{" "}
-        {whatDoYouLearnNow}, and doing this project.
+        I&apos;m a Front-end Web Developer. I&apos;m {years} years old. I just
+        started programming for {months} months ago. Currently, I&apos;m
+        learning {whatDoYouLearnNow}, and doing this project.
       </p>
       <ul className="flex my-3">
         <li className={className}>
