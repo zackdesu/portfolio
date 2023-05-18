@@ -1,8 +1,12 @@
 import React from "react";
 import Home from "./home";
+import About from "./about";
 
-const Page = () => {
-  return <Home />;
-};
+const Page = () => (
+  <>
+    <Home />
+    <About />
+  </>
+);
 
 export default Page;
