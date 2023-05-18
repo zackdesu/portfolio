@@ -5,7 +5,7 @@ const Footer = () => {
   const now = new Date().getFullYear();
   return (
     <>
-      <hr />
+      <hr className="mt-10" />
       <div className="flex justify-around mt-2">
         <p>{now} &copy; All Rights Reserved.</p>
         <p>
