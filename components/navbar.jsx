@@ -1,16 +1,16 @@
 import React from "react";
 import ToggleSwitch from "./toggleswitch";
 
-const ListLink = ({ title, pos }) => (
+const ListLink = ({ title, href = "!" }) => (
   <li className="text-slate-800 mx-2 md:mx-3 dark:text-slate-200 font-semibold relative group">
-    {title}
+    <a href={`#${href}`}>{title}</a>
     <span
-      className={`h-[1px] inline-block w-0 bg-black dark:bg-white absolute right-${pos} -bottom-0.5 lg:group-hover:w-1/2 transition-[width] duration-200`}
+      className={`h-[1px] inline-block w-0 bg-black dark:bg-white absolute right-5 -bottom-0.5 lg:group-hover:w-1/2 transition-[width] duration-200`}
     >
       &nbsp;
     </span>
     <span
-      className={`h-[1px] inline-block w-0 bg-black dark:bg-white absolute left-${pos} -bottom-0.5 lg:group-hover:w-1/2 transition-[width] duration-200`}
+      className={`h-[1px] inline-block w-0 bg-black dark:bg-white absolute left-5 -bottom-0.5 lg:group-hover:w-1/2 transition-[width] duration-200`}
     >
       &nbsp;
     </span>
@@ -24,10 +24,10 @@ export default function Navbar() {
         zackdesu
       </h2>
       <ul className="flex items-center md:-ml-24 sm:-ml-12">
-        <ListLink title="Home" pos={5} />
-        <ListLink title="About" pos={5} />
-        <ListLink title="Project" pos={6} />
-        <ListLink title="Contact" pos={6} />
+        <ListLink title="Home" href={"home"} />
+        <ListLink title="About" href={"about"} />
+        <ListLink title="Project" />
+        <ListLink title="Contact" />
       </ul>
       <ToggleSwitch />
     </div>
