@@ -20,7 +20,10 @@ const Home = () => {
     "shadow-[0_0_5px_1px] shadow-neutral-800 bg-neutral-200 hover:bg-neutral-400 dark:shadow-neutral-400 dark:bg-neutral-800 rounded-full mx-3 my-4 dark:hover:bg-neutral-600 hover:shadow-cyan-600 hover:dark:shadow-cyan-300";
 
   return (
-    <div className="flex flex-col items-center justify-center h-[85vh] my-2">
+    <div
+      className="flex flex-col items-center justify-center h-[85vh] my-2"
+      id="home"
+    >
       <p className="font-FiraCode tracking-widest text-sm md:text-base lg:text-lg mb-2">
         LET&apos;S START
       </p>
