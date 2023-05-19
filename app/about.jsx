@@ -37,7 +37,7 @@ const About = () => {
             ? `${years} year of experience.`
             : `${years} years of experience.`}{" "}
           I specialize in creating visually appealing and user-friendly
-          websites. My expertise lies in HTML, CSS, JavaScript, and React. I'm
+          websites. My expertise lies in HTML, CSS, JavaScript, and React. I&apos;m
           passionate about delivering responsive designs that provide an
           excellent user experience. I believe that a well-designed website
           should not only look great but also be easy to navigate and interact
@@ -46,7 +46,7 @@ const About = () => {
           In addition to my core skills, I have a solid understanding of
           various frameworks such as ExpressJS, NextJS, Bootstrap, and
           TailwindCSS. These frameworks allow me to build dynamic and efficient
-          web applications. I'm also proficient in working with MongoDB, a
+          web applications. I&apos;m also proficient in working with MongoDB, a
           popular NoSQL database, which enables me to handle data effectively
           and build robust back-end systems. With my knowledge of Canva and
           Figma, I can create design that enhance the overall user interface.
