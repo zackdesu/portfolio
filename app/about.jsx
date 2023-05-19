@@ -2,11 +2,17 @@ import Image from "next/image";
 import React from "react";
 
 const About = () => {
+  const now = new Date().getTime();
+  // My Experiences
+  const firstTime = new Date("2022-12-23").getTime();
+  const months = Math.floor((now - firstTime) / (1000 * 60 * 60 * 24 * 30));
+  const years = Math.floor(months / 12);
+
   return (
     <div
       className="
     flex justify-center flex-col lg:flex-row
-    h-[80vh] my-2 md:items-center
+    h-[90vh] md:items-center bg-neutral-200 dark:bg-neutral-950
     
     "
       id="about"
@@ -17,24 +23,33 @@ const About = () => {
           alt="images"
           width={400}
           height={400}
-          className="border-2 border-zinc-300 bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-800 p-5 mx-auto lg:mx-10 lg:w-[500px] 2xl:w-[700px]"
+          className="border-2 border-zinc-300 bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-800 p-5 mx-auto lg:mx-10 lg:w-[450px] xl:w-[500px] 2xl:w-[700px]"
         />
       </div>
-      <div className="mx-10 flex flex-col lg:text-end">
-        <h2 className="mx-auto lg:mx-0 ">About Me</h2>
-        <p className="mx-auto lg:mx-0 max-w-xl mt-2">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
-          laudantium sunt porro perspiciatis ipsam, quo recusandae reiciendis
-          labore illum, qui dicta, dignissimos voluptate dolorum iste laboriosam
-          quaerat laborum minus! Nulla, nemo veritatis dolore laboriosam ad,
-          sint amet nam excepturi iste sit facilis esse et optio officiis ullam,
-          exercitationem aliquid fugit! Atque magni officiis suscipit commodi
-          quod eos minus incidunt, excepturi voluptate inventore nesciunt porro
-          fugiat nam, doloribus harum ex vel facilis ullam possimus doloremque
-          molestias ipsum. Repellat, fugiat illo quidem possimus animi excepturi
-          quae unde odit, provident facere numquam ut voluptates nihil
-          repellendus rerum reprehenderit, voluptatibus sapiente iure. Earum,
-          quam.
+      <div className="mx-10 flex flex-col lg:text-end font-Lato">
+        <h1 className="mx-auto mb-5 lg:m-0 font-[700] xl:text-5xl">About Me</h1>
+        {/* prettier-ignore */}
+        <p className="mx-auto lg:mx-0 max-w-xl mt-2 font-[300] xl:text-lg">
+          Hello, my name is Zack. a front-end web developer with{" "}
+          {months < 13
+            ? `${months} months of experience.`
+            : years === 1
+            ? `${years} year of experience.`
+            : `${years} years of experience.`}{" "}
+          I specialize in creating visually appealing and user-friendly
+          websites. My expertise lies in HTML, CSS, JavaScript, and React. I'm
+          passionate about delivering responsive designs that provide an
+          excellent user experience. I believe that a well-designed website
+          should not only look great but also be easy to navigate and interact
+          with. 
+          <br/><br/>
+          In addition to my core skills, I have a solid understanding of
+          various frameworks such as ExpressJS, NextJS, Bootstrap, and
+          TailwindCSS. These frameworks allow me to build dynamic and efficient
+          web applications. I'm also proficient in working with MongoDB, a
+          popular NoSQL database, which enables me to handle data effectively
+          and build robust back-end systems. With my knowledge of Canva and
+          Figma, I can create design that enhance the overall user interface.
         </p>
       </div>
     </div>
