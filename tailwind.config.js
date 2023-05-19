@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         FiraCode: ["Fira Code", "monospace"],
         Josefin: ["Josefin Sans", "sans-serif"],
+        Lato: ["Lato", "sans-serif"],
       },
     },
   },
