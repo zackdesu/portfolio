@@ -26,8 +26,8 @@ const About = () => {
           className="border-2 border-zinc-300 bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-800 p-5 mx-auto lg:mx-10 lg:w-[450px] xl:w-[500px] 2xl:w-[700px]"
         />
       </div>
-      <div className="mx-10 flex flex-col lg:text-end font-Lato">
-        <h1 className="mx-auto mb-5 lg:m-0 font-[700] xl:text-5xl">About Me</h1>
+      <div className="mx-10 flex my-5 flex-col lg:text-end font-Lato">
+        <h1 className="mx-auto mb-3 lg:m-0 font-[700] xl:text-5xl">About Me</h1>
         {/* prettier-ignore */}
         <p className="mx-auto lg:mx-0 max-w-xl mt-2 font-[300] xl:text-lg">
           Hello, my name is Zack. a front-end web developer with{" "}
