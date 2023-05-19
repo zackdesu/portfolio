@@ -40,7 +40,7 @@ const ToggleSwitch = () => {
         onChange={handleIsOn}
         checked={isOn}
       />
-      <label htmlFor="switch" className="md:-mr-10">
+      <label htmlFor="switch" className="md:-mr-10 cursor-pointer">
         {icon}
       </label>
     </>
