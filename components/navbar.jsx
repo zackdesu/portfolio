@@ -26,6 +26,7 @@ export default function Navbar() {
       <ul className="flex items-center md:-ml-24 sm:-ml-12">
         <ListLink title="Home" href={"home"} />
         <ListLink title="About" href={"about"} />
+        <ListLink title="My Skills" />
         <ListLink title="Project" />
         <ListLink title="Contact" />
       </ul>
