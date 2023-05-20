@@ -19,7 +19,7 @@ const ListLink = ({ title, href = "!" }) => (
 
 export default function Navbar() {
   return (
-    <div className="backdrop-blur border-b-2 border-zinc-200 dark:border-zinc-800 text-slate-950 w-full flex items-center justify-around py-5 dark:text-slate-50 sticky top-0">
+    <div className="backdrop-blur border-b-2 border-zinc-200 dark:border-zinc-800 text-slate-950 w-full flex items-center justify-around py-5 dark:text-slate-50 sticky z-[99999999] top-0">
       <h2 className="md:-ml-10 cursor-pointer hover:text-cyan-600 hover:dark:text-cyan-300">
         zackdesu
       </h2>
