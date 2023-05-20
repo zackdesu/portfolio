@@ -1,7 +1,7 @@
 import React from "react";
 import { FiGithub, FiFacebook, FiInstagram } from "react-icons/fi";
 import { BsDiscord } from "react-icons/bs";
-import Link from "next/link";
+import Icons from "@/components/Icons";
 
 const Home = () => {
   const whatDoYouLearnNow = "NextJS";
@@ -15,18 +15,6 @@ const Home = () => {
   // My Experiences
   const firstTime = new Date("2022-12-23").getTime();
   const months = Math.floor((now - firstTime) / (1000 * 60 * 60 * 24 * 30));
-
-  const Icons = ({ icon: Icon, url = "#" }) => (
-    <li
-      className={
-        "shadow-[0_0_5px_1px] shadow-neutral-800 bg-neutral-200 hover:bg-neutral-400 dark:shadow-neutral-400 dark:bg-neutral-800 rounded-full mx-3 my-4 dark:hover:bg-neutral-600 hover:shadow-cyan-600 hover:dark:shadow-cyan-300"
-      }
-    >
-      <Link href={url} target={url !== "#" ? "_blank" : ""}>
-        <Icon className="text-[22px] m-3 lg:m-4 lg:text-[30px]" />
-      </Link>
-    </li>
-  );
 
   return (
     <div
