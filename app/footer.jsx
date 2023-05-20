@@ -5,11 +5,10 @@ const Footer = () => {
   const now = new Date().getFullYear();
   return (
     <>
-      <hr className="mt-10" />
-      <div className="flex justify-around mt-2">
+      <div className="flex justify-around mt-2 bg-neutral-500 p-3 border-t-black dark:border-t-white">
         <p>{now} &copy; All Rights Reserved.</p>
         <p>
-          Build by{" "}
+          Build with ❤ by{" "}
           <span className="underline cursor-pointer">
             <Link href="https://github.com/zackdesu">zackdesu</Link>
           </span>
