@@ -16,8 +16,17 @@ const Home = () => {
   const firstTime = new Date("2022-12-23").getTime();
   const months = Math.floor((now - firstTime) / (1000 * 60 * 60 * 24 * 30));
 
-  const className =
-    "shadow-[0_0_5px_1px] shadow-neutral-800 bg-neutral-200 hover:bg-neutral-400 dark:shadow-neutral-400 dark:bg-neutral-800 rounded-full mx-3 my-4 dark:hover:bg-neutral-600 hover:shadow-cyan-600 hover:dark:shadow-cyan-300";
+  const Icons = ({ icon: Icon, url = "#" }) => (
+    <li
+      className={
+        "shadow-[0_0_5px_1px] shadow-neutral-800 bg-neutral-200 hover:bg-neutral-400 dark:shadow-neutral-400 dark:bg-neutral-800 rounded-full mx-3 my-4 dark:hover:bg-neutral-600 hover:shadow-cyan-600 hover:dark:shadow-cyan-300"
+      }
+    >
+      <Link href={url} target={url !== "#" ? "_blank" : ""}>
+        <Icon className="text-[22px] m-3 lg:m-4 lg:text-[30px]" />
+      </Link>
+    </li>
+  );
 
   return (
     <div
@@ -38,22 +47,10 @@ const Home = () => {
         learning {whatDoYouLearnNow}, and doing this project.
       </p>
       <ul className="flex my-3">
-        <li className={className}>
-          <Link href="https://github.com/zackdesu" target={"_blank"}>
-            <FiGithub className="text-[22px] m-3 lg:m-4 lg:text-[30px]" />
-          </Link>
-        </li>
-        <li className={className}>
-          <FiFacebook className="text-[22px] m-3 lg:m-4 lg:text-[30px]" />
-        </li>
-        <li className={className}>
-          <BsDiscord className="text-[22px] m-3 lg:m-4 lg:text-[30px]" />
-        </li>
-        <li className={className}>
-          <Link href="https://instagram.com/zackdesu" target={"_blank"}>
-            <FiInstagram className="text-[22px] m-3 lg:m-4 lg:text-[30px]" />
-          </Link>
-        </li>
+        <Icons icon={FiGithub} url={"https://github.com/zackdesu"} />
+        <Icons icon={FiFacebook} />
+        <Icons icon={BsDiscord} />
+        <Icons icon={FiInstagram} url={"https://instagram.com/zackdesu"} />
       </ul>
     </div>
   );
