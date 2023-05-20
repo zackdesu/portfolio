@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center h-[90vh]"
+      className="flex flex-col items-center justify-center h-[95vh] -mt-3"
       id="home"
     >
       <p className="font-FiraCode tracking-widest text-sm md:text-base lg:text-lg mb-2">
