@@ -20,7 +20,7 @@ const About = () => {
             className="border-2 border-zinc-300 bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-800 p-5 mx-auto lg:mx-10 lg:w-[450px] xl:w-[500px] 2xl:w-[700px] rounded-xl hover:xl:scale-75 hover:2xl:scale-105 duration-200 xl:transition-all shadow-[0_0_5px_.5px] shadow-neutral-800 dark:shadow-neutral-400 xl:hover:shadow-none"
           />
         </div>
-        <div className="mx-10 flex my-5 flex-col lg:text-end font-Lato">
+        <div className="mx-10 flex my-5 flex-col text-center lg:text-end font-Lato">
           <h1 className="mx-auto mb-3 lg:m-0 font-[700] xl:text-5xl">
             Who I am
           </h1>
