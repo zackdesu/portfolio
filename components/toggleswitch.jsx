@@ -3,21 +3,21 @@
 import React, { useEffect, useState } from "react";
 import { CiLight, CiDark } from "react-icons/ci";
 
-const ToggleSwitch = () => {
+const ToggleSwitch = ({ check = false }) => {
   const [isOn, setIsOn] = useState(false);
   const [icon, setIcon] = useState(
-    <CiLight className="text-[25px] md:text-[35px]" />
+    <CiLight className="text-[30px] md:text-[35px]" />
   );
   const handleIsOn = () => {
     setIsOn(!isOn);
     if (isOn) {
       document.documentElement.classList.remove("dark");
       localStorage.removeItem("theme");
-      setIcon(<CiLight className="text-[25px] md:text-[35px]" />);
+      setIcon(<CiLight className="text-[30px] md:text-[35px]" />);
     } else {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
-      setIcon(<CiDark className="text-[25px] md:text-[35px]" />);
+      setIcon(<CiDark className="text-[30px] md:text-[35px]" />);
     }
   };
 
@@ -27,7 +27,7 @@ const ToggleSwitch = () => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
       setIsOn(true);
-      setIcon(<CiDark className="text-[25px] md:text-[35px]" />);
+      setIcon(<CiDark className="text-[30px] md:text-[35px]" />);
     }
   }, [isOn, setIsOn]);
 
@@ -40,7 +40,7 @@ const ToggleSwitch = () => {
         onChange={handleIsOn}
         checked={isOn}
       />
-      <label htmlFor="switch" className="md:-mr-10 cursor-pointer">
+      <label htmlFor="switch" className={"md:-mr-10 cursor-pointer"}>
         {icon}
       </label>
     </>

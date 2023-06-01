@@ -4,7 +4,7 @@ import Icons from "@/components/Icons";
 const Skills = () => {
   return (
     <div
-      className="flex flex-col justify-center items-center my-24 h-52"
+      className="flex flex-col justify-center items-center my-24 pt-5"
       id="skills"
     >
       <h1 className="font-Josefin">Tech Stacks</h1>

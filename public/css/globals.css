@@ -35,9 +35,10 @@
   p {
     @apply text-xs md:text-base;
   }
-
-  button {
-    @apply shadow-xl shadow-gray-400 rounded-xl;
+  .bar1,
+  .bar2,
+  .bar3 {
+    @apply w-[30px] h-[3px] bg-[#1c1c1c] dark:bg-[#c1c1c1] mx-[7px] transition duration-[0.4s];
   }
 }
 
@@ -45,4 +46,26 @@ html,
 body {
   scroll-behavior: smooth;
   scroll-padding-top: 74px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: #1c1c1c;
+  margin: 7px 0;
+  transition: 0.4s;
+}
+
+.ganti.bar1 {
+  transform: translate(0, 10px) rotate(45deg);
+}
+
+.ganti.bar2 {
+  opacity: 0;
+}
+
+.ganti.bar3 {
+  transform: translate(0, -10px) rotate(-45deg);
 }
