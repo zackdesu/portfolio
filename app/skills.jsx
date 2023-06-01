@@ -13,9 +13,13 @@ const Skills = () => {
         <Icons url={"/img/logo/css.png"} name="Cascading Style Sheets" />
         <Icons url={"/img/logo/js.png"} name="JavaScript" />
         <Icons url={"/img/logo/react.png"} name="React.js" />
-        <Icons url={"/img/logo/next.svg"} name="Next.js" />
+        <Icons url={"/img/logo/next.svg"} name="Next.js" inverted={true} />
         <Icons url={"/img/logo/tailwind.png"} name="Tailwind CSS" />
-        <Icons url={"/img/logo/express.png"} name="Express.js" />
+        <Icons
+          url={"/img/logo/express.png"}
+          name="Express.js"
+          inverted={true}
+        />
         <Icons url={"/img/logo/canva.png"} name="Canva" />
         <Icons url={"/img/logo/figma.png"} name="Figma" />
         <Icons url={"/img/logo/mongodb.png"} name="MongoDB" />
