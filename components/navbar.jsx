@@ -6,36 +6,24 @@ import ToggleSwitch from "./toggleswitch";
 
 const ListLink = ({ title, href = "!" }) => {
   return (
-    <>
-      <a href={`#${href}`}>
-        <li
-          className="text-slate-800 p-3 dark:text-slate-200 font-semibold relative group text-base"
-          onClick={() => {
-            const hamburger = document.querySelector(".hamburger");
-            const navMenu = document.querySelector("#nav-menu");
-            const bar = document.querySelectorAll(".bar");
-            if (!hamburger.classList.contains("max-md:hidden")) {
-              bar.forEach((e) => {
-                e.classList.toggle("ganti");
-              });
-              navMenu.classList.add("max-md:hidden");
-            }
-          }}
-        >
-          {title}
-        </li>
-      </a>
-      <span
-        className={`h-[1px] inline-block w-0 bg-black dark:bg-white absolute right-5 -bottom-0.5 lg:group-hover:w-1/2 transition-[width] duration-200`}
+    <a href={`#${href}`}>
+      <li
+        className="text-slate-800 p-3 dark:text-slate-200 active:text-cyan-500 dark:active:text-cyan-500 font-semibold relative group text-base"
+        onClick={() => {
+          const hamburger = document.querySelector(".hamburger");
+          const navMenu = document.querySelector("#nav-menu");
+          const bar = document.querySelectorAll(".bar");
+          if (!hamburger.classList.contains("max-md:hidden")) {
+            bar.forEach((e) => {
+              e.classList.toggle("ganti");
+            });
+            navMenu.classList.add("max-md:hidden");
+          }
+        }}
       >
-        &nbsp;
-      </span>
-      <span
-        className={`h-[1px] inline-block w-0 bg-black dark:bg-white absolute left-5 -bottom-0.5 lg:group-hover:w-1/2 transition-[width] duration-200`}
-      >
-        &nbsp;
-      </span>
-    </>
+        {title}
+      </li>
+    </a>
   );
 };
 
@@ -51,7 +39,7 @@ export default function Navbar() {
       >
         <ListLink title="Home" href={"home"} />
         <ListLink title="About" href={"about"} />
-        <ListLink title="My Skills" href="skills" />
+        <ListLink title="Tech Stacks" href="skills" />
         <ListLink title="Project" href="project" />
         <ListLink title="Contact" />
       </ul>
