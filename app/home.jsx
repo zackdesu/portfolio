@@ -36,9 +36,13 @@ const Home = () => {
       </p>
       <ul className="flex my-3">
         <Icons icon={FiGithub} url={"https://github.com/zackdesu"} />
-        <Icons icon={FiFacebook} />
-        <Icons icon={BsDiscord} />
-        <Icons icon={FiInstagram} url={"https://instagram.com/zackdesu"} />
+        <Icons icon={FiFacebook} colorHover="group-hover:text-[#1877f2]" />
+        <Icons icon={BsDiscord} colorHover="group-hover:text-[#5865f2]" />
+        <Icons
+          icon={FiInstagram}
+          url={"https://instagram.com/zackdesu"}
+          colorHover="group-hover:text-[#fe077a]"
+        />
       </ul>
     </div>
   );

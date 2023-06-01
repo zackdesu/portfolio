@@ -2,14 +2,20 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const Icons = ({ icon: Icon, url = "#", name, inverted = false }) => (
+const Icons = ({
+  icon: Icon,
+  url = "#",
+  name,
+  inverted = false,
+  colorHover = "",
+}) => (
   <li
     className={
       "shadow-[0_0_5px_1px] shadow-neutral-800 bg-neutral-200 hover:bg-neutral-300 dark:shadow-neutral-400 dark:bg-neutral-900 rounded-full mx-3 my-4 dark:hover:bg-neutral-800 hover:shadow-cyan-800 hover:dark:shadow-cyan-200 group"
     }
   >
     {url === "#" ? (
-      <Icon className={"text-[22px] m-3 lg:m-4 lg:text-[30px]"} />
+      <Icon className={`text-[22px] m-3 lg:m-4 lg:text-[30px] ${colorHover}`} />
     ) : url.includes("/img") ? (
       <Image
         src={url}
@@ -25,7 +31,9 @@ const Icons = ({ icon: Icon, url = "#", name, inverted = false }) => (
       />
     ) : (
       <Link href={url} target="_blank">
-        <Icon className={"text-[22px] m-3 lg:m-4 lg:text-[30px]"} />
+        <Icon
+          className={`text-[22px] m-3 lg:m-4 lg:text-[30px] ${colorHover}`}
+        />
       </Link>
     )}
   </li>

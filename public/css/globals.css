@@ -70,33 +70,6 @@ body {
   transform: translate(0, -10px) rotate(-45deg);
 }
 
-.instagram {
-  background: rgb(79, 91, 213);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(79, 91, 213, 1) 10%,
-    rgba(150, 47, 191, 1) 30%,
-    rgba(214, 41, 118, 1) 50%,
-    rgba(250, 126, 30, 1) 70%,
-    rgba(254, 218, 117, 1) 90%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(79, 91, 213, 1) 10%,
-    rgba(150, 47, 191, 1) 30%,
-    rgba(214, 41, 118, 1) 50%,
-    rgba(250, 126, 30, 1) 70%,
-    rgba(254, 218, 117, 1) 90%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(79, 91, 213, 1) 10%,
-    rgba(150, 47, 191, 1) 30%,
-    rgba(214, 41, 118, 1) 50%,
-    rgba(250, 126, 30, 1) 70%,
-    rgba(254, 218, 117, 1) 90%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4f5bd5",endColorstr="#feda75",GradientType=1);
-  background-clip: text;
-  color: transparent;
+.fillkit {
+  -webkit-text-fill-color: transparent;
 }
