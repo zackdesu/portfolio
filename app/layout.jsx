@@ -1,5 +1,3 @@
-"use client";
-
 import Navbar from "@/components/navbar";
 import "../public/css/globals.css";
 import Footer from "./footer";
@@ -14,21 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar />
-        <div
-          onClick={() => {
-            const hamburger = document.querySelector(".hamburger");
-            const navMenu = document.querySelector("#nav-menu");
-            const bar = document.querySelectorAll(".bar");
-            if (!hamburger.classList.contains("max-md:hidden")) {
-              bar.forEach((e) => {
-                e.classList.remove("ganti");
-              });
-              navMenu.classList.add("max-md:hidden");
-            }
-          }}
-        >
           {children}
-        </div>
         <Footer />
       </body>
     </html>
