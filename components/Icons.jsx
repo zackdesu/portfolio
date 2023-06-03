@@ -11,7 +11,7 @@ const Icons = ({
 }) => (
   <li
     className={
-      "shadow-[0_0_5px_1px] shadow-neutral-800 bg-neutral-200 hover:bg-neutral-300 dark:shadow-neutral-400 dark:bg-neutral-900 rounded-full mx-3 my-4 dark:hover:bg-neutral-800 hover:shadow-cyan-800 hover:dark:shadow-cyan-200 group"
+      "shadow-[0_0_5px_1px] shadow-neutral-800 bg-neutral-200 hover:bg-neutral-300 dark:shadow-neutral-400 dark:bg-neutral-900 rounded-full mx-3 my-4 dark:hover:bg-neutral-800 hover:shadow-cyan-800 hover:dark:shadow-cyan-200 list-none group"
     }
   >
     {url === "#" ? (

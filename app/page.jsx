@@ -5,6 +5,7 @@ import Home from "./home";
 import About from "./about";
 import Skills from "./skills";
 import MyProjects from "./myprojects";
+import Contact from "./contact";
 
 const Page = () => (
   <div
@@ -15,6 +16,9 @@ const Page = () => (
       if (!hamburger.classList.contains("max-md:hidden")) {
         bar.forEach((e) => {
           e.classList.remove("ganti");
+          if (!e.classList.contains("ganti")) {
+            navMenu.classList.add("max-md:hidden");
+          }
         });
         navMenu.classList.add("max-md:hidden");
       }
@@ -24,6 +28,7 @@ const Page = () => (
     <About />
     <Skills />
     <MyProjects />
+    <Contact />
   </div>
 );
 
