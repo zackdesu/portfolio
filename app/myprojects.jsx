@@ -8,17 +8,21 @@ const MyProjects = () => {
     name,
     desc = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nesciunt quod rerum placeat reiciendis necessitatibus explicabo sit expedita facilis laborum!",
   }) => (
-    <li className="flex flex-col m-5 w-1/3 max-lg:w-full max-lg:items-center max-lg:text-center cursor-default">
-      <Image
-        src={src}
-        width={400}
-        height={185}
-        style={{ width: "auto" }}
-        alt={name}
-        className="rounded-xl"
-      />
-      <h3 className="text-xl">{name}</h3>
-      <p className="my-2 max-md:w-3/4">{desc}</p>
+    <li className="flex flex-col justify-between m-5 w-1/3 max-lg:w-full max-lg:items-center max-lg:text-center cursor-default">
+      <div>
+        <Image
+          src={src}
+          width={400}
+          height={185}
+          style={{ objectFit: "contain" }}
+          alt={name}
+          className="rounded-xl max-h-[208px] mx-auto"
+        />
+        <div>
+          <h3 className="text-xl mt-2">{name}</h3>
+          <p className="my-2 mx-auto max-lg:w-2/4">{desc}</p>
+        </div>
+      </div>
       <Link href={"#"}>
         <button className="px-5 py-2 bg-cyan-400 dark:bg-cyan-600 dark:hover:bg-cyan-500 hover:bg-cyan-500 rounded cursor-pointer">
           Link
@@ -31,10 +35,26 @@ const MyProjects = () => {
     <div id="project" className="bg-neutral-200 dark:bg-neutral-950 p-5">
       <h1 className="text-center">Projects</h1>
       <ul className="flex justify-center w-5/6 mx-auto flex-wrap">
-        <Template src="/img/projects/kotaa.png" name="Project Kota Dumai" />
-        <Template src="/img/projects/nuansashop.png" name="NuansaShop" />
-        <Template src="/img/projects/kalkulator.png" name="Kalkulator" />
-        <Template src="/img/projects/mountfuji.png" name="Mount Fuji" />
+        <Template
+          src="/img/projects/kotaa.png"
+          name="Project Kota Dumai"
+          desc="This is my first project with HTML and Bootstrap only. I try to make my own city website, Dumai."
+        />
+        <Template
+          src="/img/projects/nuansashop.png"
+          name="NuansaShop"
+          desc="This is my second project, NuansaShop. I do this project because my friend asked me to make this type of website. In here, I learn deeply about flexbox."
+        />
+        <Template
+          src="/img/projects/kalkulator.png"
+          name="Calculator"
+          desc="This is my third project, I try to use object because my knowledge about Object is bad."
+        />
+        <Template
+          src="/img/projects/mountfuji.png"
+          name="Mount Fuji"
+          desc="This is my fourth project, Mount Fuji. My friend told me to make a website with Mount Fuji theme. This is the first website which was bought by my friend."
+        />
       </ul>
     </div>
   );
