@@ -10,7 +10,7 @@ const About = () => {
 
   return (
     <div className="bg-neutral-200 dark:bg-neutral-950 p-5" id="about">
-      <div className="flex justify-center flex-col lg:flex-row md:items-center">
+      <div className="flex justify-center flex-col xl:flex-row md:items-center">
         <div className="relative">
           <Image
             src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
@@ -20,12 +20,12 @@ const About = () => {
             className="border-2 border-zinc-300 bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-800 p-5 mx-auto lg:mx-10 lg:w-[450px] xl:w-[500px] 2xl:w-[700px] rounded-xl hover:xl:scale-105 duration-200 xl:transition-all shadow-[0_0_5px_.5px] shadow-neutral-800 dark:shadow-neutral-400 xl:hover:shadow-none"
           />
         </div>
-        <div className="mx-10 flex my-5 flex-col text-center lg:text-end font-Lato">
-          <h1 className="mx-auto mb-3 lg:m-0 font-[700] xl:text-5xl">
+        <div className="mx-10 flex my-5 flex-col text-center xl:text-end font-Lato">
+          <h1 className="mx-auto mb-3 xl:m-0 font-[700] xl:text-5xl">
             Who I am
           </h1>
           {/* prettier-ignore */}
-          <p className="mx-auto lg:mx-0 max-w-xl mt-2 font-[300] xl:text-lg">
+          <p className="mx-auto xl:mx-0 max-w-xl mt-2 font-[300] xl:text-lg">
           Hello, my name is Zack. a front-end web developer with{" "}
           {months < 13
             ? `${months} months of experience.`
