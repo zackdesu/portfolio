@@ -41,7 +41,7 @@ export default function Navbar() {
         <ListLink title="About" href={"about"} />
         <ListLink title="Tech Stacks" href="skills" />
         <ListLink title="Project" href="project" />
-        <ListLink title="Contact" />
+        <ListLink title="Contact" href="contact" />
       </ul>
       <div className="flex items-center">
         <ToggleSwitch />
