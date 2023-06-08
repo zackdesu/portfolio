@@ -36,22 +36,22 @@ const MyProjects = () => {
       <h1 className="text-center">Projects</h1>
       <ul className="flex justify-center w-5/6 mx-auto flex-wrap">
         <Template
-          src="/img/projects/kotaa.png"
+          src="/img/project/kotaa.png"
           name="Project Kota Dumai"
           desc="This is my first project with HTML and Bootstrap only. I try to make my own city website, Dumai."
         />
         <Template
-          src="/img/projects/nuansashop.png"
+          src="/img/project/nuansashop.png"
           name="NuansaShop"
           desc="This is my second project, NuansaShop. I do this project because my friend asked me to make this type of website. In here, I learn deeply about flexbox."
         />
         <Template
-          src="/img/projects/kalkulator.png"
+          src="/img/project/kalkulator.png"
           name="Calculator"
           desc="This is my third project, I try to use object because my knowledge about Object is bad."
         />
         <Template
-          src="/img/projects/mountfuji.png"
+          src="/img/project/mountfuji.png"
           name="Mount Fuji"
           desc="This is my fourth project, Mount Fuji. My friend told me to make a website with Mount Fuji theme. This is the first website which was bought by my friend."
         />
