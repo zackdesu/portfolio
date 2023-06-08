@@ -52,7 +52,6 @@ const Contact = () => {
         className="my-3 w-2/3 flex flex-col items-center"
         onSubmit={handleSubmit}
       >
-        <input type="hidden" name="_csrf" />
         <InputForm name="Name" />
         <InputForm name="Email" type="email" />
         <InputForm name="Message" />
