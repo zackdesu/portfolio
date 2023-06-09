@@ -21,7 +21,7 @@ const About = () => {
           />
         </div>
         <div className="mx-10 flex my-5 flex-col text-center xl:text-end font-Lato">
-          <h1 className="mx-auto mb-3 xl:m-0 font-[700] xl:text-5xl">
+          <h1 className="mx-auto mb-3 xl:m-0 font-[700] xl:text-5xl font-Josefin">
             Who I am
           </h1>
           {/* prettier-ignore */}

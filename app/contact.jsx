@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   const InputForm = ({ name, type = "text" }) => (
-    <div className="flex flex-col w-1/2">
+    <div className="flex flex-col w-full sm:w-3/4 lg:w-1/2">
       <label htmlFor={name} className="my-1 font-medium">
         {name}
       </label>
@@ -47,7 +47,7 @@ const Contact = () => {
       className="flex flex-col items-center justify-center my-5"
       id="contact"
     >
-      <h1 className="mb-3">Contacts</h1>
+      <h1 className="mb-3">Contact Me</h1>
       <form
         className="my-3 w-2/3 flex flex-col items-center"
         onSubmit={handleSubmit}
@@ -55,7 +55,10 @@ const Contact = () => {
         <InputForm name="Name" />
         <InputForm name="Email" type="email" />
         <InputForm name="Message" />
-        <button type="submit" className="bg-cyan-400 rounded px-3 py-2 mt-3">
+        <button
+          type="submit"
+          className="bg-cyan-400 dark:bg-cyan-700 rounded px-3 py-2 mt-3 shadow-[0_8px_30px_rgb(0,0,0,0.12)] font-medium tracking-wide"
+        >
           Submit
         </button>
       </form>
