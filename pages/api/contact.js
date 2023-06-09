@@ -29,6 +29,9 @@ const handler = async (req, res) => {
           if (err) {
             console.error(err);
             rej(err);
+            res.status(400).json({
+              message: 'Transporter is error.'
+            })
           } else {
             console.log(success);
             res(success);
@@ -57,6 +60,9 @@ const handler = async (req, res) => {
           if (err) {
             console.error(err);
             reject(err);
+            res.status(400).json({
+              message: 'Message failed to send! Try Again'
+            })
           } else {
             console.log(info);
             resolve(info);
