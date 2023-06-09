@@ -1,5 +1,5 @@
-import { transporter, mailOptions } from "./component/nodemailer";
 import apiRateLimiter from "./component/apiRateLimiter";
+import nodemailer from "nodemailer";
 
 const handler = async (req, res) => {
   apiRateLimiter(req, res, async () => {
@@ -10,26 +10,61 @@ const handler = async (req, res) => {
           message: `Input still empty!`,
         });
       }
+      const email = process.env.EMAIL;
+      const pass = process.env.EMAIL_PASS;
 
-      try {
-        await transporter.sendMail({
-          ...mailOptions,
-          subject: "Portfolio Contact",
-          text: "Portfolio",
-          html: `
-        <p>Sender: ${data.name}</p>
-<p>Email: ${data.email}</p>
-<h1>Message</h1>
-<p>${data.message}</p>
-            `,
+      const transporter = nodemailer.createTransport({
+        port: 465,
+        service: "gmail",
+        auth: {
+          user: email,
+          pass,
+        },
+        host: "smtp.gmail.com",
+        secure: true,
+      });
+
+      await new Promise((res, rej) => {
+        transporter.verify((err, success) => {
+          if (err) {
+            console.error(err);
+            rej(err);
+          } else {
+            console.log(success);
+            res(success);
+          }
         });
-        return res.status(200).json({ message: "Message Sent!" });
-      } catch (error) {
-        console.log(error);
-        res.status(400).json({ message: error.message });
-      }
+      });
+
+      const mailData = {
+        from: {
+          name: data.name,
+          address: data.email,
+        },
+        to: "zarchxxx@gmail.com",
+        subject: "Portfolio Contact",
+        text: "Portfolio",
+        html: `
+        <p>Sender: ${data.name}</p>
+        <p>Email: ${data.email}</p>
+        <h1>Message</h1>
+        <p>${data.message}</p>`,
+      };
+
+      await new Promise((resolve, reject) => {
+        // send mail
+        transporter.sendMail(mailData, (err, info) => {
+          if (err) {
+            console.error(err);
+            reject(err);
+          } else {
+            console.log(info);
+            resolve(info);
+          }
+        });
+      });
     }
-    return res.status(400).json({ message: "Bad Request" });
+    res.status(200).json({ message: "Message sent!" });
   });
 };
 
