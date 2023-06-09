@@ -22,9 +22,9 @@ const Contact = () => {
     const result = await res.json();
 
     if (res.ok) {
-      console.log(result);
+      alert(result.message);
     } else {
-      console.log(result);
+      alert(result.message);
     }
   };
 
