@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 import { apiRateLimter } from "./components/apiratelimiter";
-import { oAuth2Client } from "./gauth";
+import { oAuth2Client } from "./components/gauth";
 
 const handler = async (req, res) => {
   apiRateLimter(req, res, async () => {
