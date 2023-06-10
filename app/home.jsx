@@ -29,7 +29,7 @@ const Home = () => {
         <span className="text-cyan-600 dark:text-cyan-300">Zack</span>
       </h1>
       <h1 className="font-Josefin">A Front-end Web Developer</h1>
-      <p className="max-w-xl xl:max-w-2xl mt-2 mx-8 text-center text-neutral-500 dark:text-neutral-300 xl:text-lg">
+      <p className="max-w-xl xl:max-w-2xl mt-2 mx-8 text-center text-neutral-600 dark:text-neutral-300 xl:text-lg">
         I&apos;m a Front-end Web Developer. I&apos;m {years} years old. I just
         started programming for {months} months ago. Currently, I&apos;m
         learning {whatDoYouLearnNow}, and doing this project.
