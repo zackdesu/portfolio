@@ -37,8 +37,12 @@ const Contact = () => {
         type={type}
         id={name}
         name={name}
-        className="mb-3 px-3 py-2 rounded border border-slate-500 shadow-sm focus:outline-none focus:border-cyan-500 bg-zinc-100 dark:bg-zinc-700"
+        className={`mb-3 px-3 py-2 rounded border border-slate-500 shadow-sm focus:outline-none focus:border-cyan-500 bg-zinc-100 dark:bg-zinc-700 focus:ring-1 focus:ring-cyan-600 ${
+          type === "email" &&
+          "invalid:focus:border-pink-600 invalid:text-pink-700 invalid:focus:ring-pink-800"
+        }`}
         autoComplete="off"
+        required
       />
     </div>
   );
@@ -52,9 +56,10 @@ const Contact = () => {
         type={type}
         id={name}
         name={name}
-        className="mb-3 px-3 py-2 rounded border border-slate-500 shadow-sm focus:outline-none focus:border-cyan-500 bg-zinc-100 dark:bg-zinc-700"
+        className={`mb-3 px-3 py-2 rounded border border-slate-500 shadow-sm focus:outline-none focus:border-cyan-500 bg-zinc-100 dark:bg-zinc-700`}
         autoComplete="off"
         rows={5}
+        required
       />
     </div>
   );
