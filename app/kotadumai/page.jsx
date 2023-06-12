@@ -4,7 +4,7 @@ import React from "react";
 const Page = () => {
   return (
     <Details
-      img="kotaa"
+      img="kotadumai"
       href="#!"
       title="Kota Dumai"
       list={["HTML", "CSS", "Bootstrap v.5.0"]}

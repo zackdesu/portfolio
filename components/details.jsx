@@ -28,7 +28,7 @@ const Details = ({
         />
       </div>
       <div className="mx-20 mt-5">
-        <Link href="/">Back to Homepage</Link>
+        <Link href="/#project">Back to Homepage</Link>
       </div>
       <div className="mx-20 my-5 flex max-lg:flex-col max-lg:items-center max-lg:text-center">
         <div className="w-[60%] max-lg:w-full">
