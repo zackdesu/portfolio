@@ -35,13 +35,21 @@ const Home = () => {
         learning {whatDoYouLearnNow}, and doing this project.
       </p>
       <ul className="flex my-3">
-        <Icons icon={FiGithub} url={"https://github.com/zackdesu"} />
+        <Icons
+          icon={FiGithub}
+          url={"https://github.com/zackdesu"}
+          colorHover="group-hover:text-black dark:group-hover:text-white"
+        />
         <Icons
           icon={FiFacebook}
           url={"https://www.facebook.com/zackdesu69"}
           colorHover="group-hover:text-[#1877f2]"
         />
-        <Icons icon={BsDiscord} colorHover="group-hover:text-[#5865f2]" />
+        <Icons
+          icon={BsDiscord}
+          colorHover="group-hover:text-[#5865f2]"
+          url="https://discord.com/channels/@me /737139214637989958"
+        />
         <Icons
           icon={FiInstagram}
           url={"https://instagram.com/zackdesu"}
