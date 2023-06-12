@@ -55,7 +55,7 @@ const MyProjects = () => {
           src="/img/project/mountfuji.png"
           name="Mount Fuji"
           desc="This is my fourth project, Mount Fuji. My friend asked me to make a website with Mount Fuji theme. This is the first website which was bought by my friend."
-          href="https://mountainfujisite.netlify.app"
+          href="/mountainfuji"
         />
       </ul>
     </div>
