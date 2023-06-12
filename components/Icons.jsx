@@ -17,7 +17,7 @@ const Icons = ({
         }
       >
         <Icon
-          className={`text-[22px] m-3 lg:m-4 lg:text-[30px] ${colorHover}`}
+          className={`text-[22px] m-3 lg:m-4 lg:text-[30px] text-neutral-800 dark:text-neutral-200 ${colorHover}`}
         />{" "}
       </li>
     ) : url.includes("/img") ? (
@@ -28,13 +28,13 @@ const Icons = ({
       >
         <Image
           src={url}
-          width={22}
-          height={22}
+          width={30}
+          height={30}
           alt={name}
           className={
             inverted
-              ? "mx-3 py-3 lg:py-4 lg:mx-4 lg:w-[30px] dark:invert"
-              : "mx-3 py-3 lg:py-4 lg:mx-4 lg:w-[30px]"
+              ? "mx-3 py-3 lg:py-4 lg:mx-4 dark:invert"
+              : "mx-3 py-3 lg:py-4 lg:mx-4"
           }
           title={name}
         />{" "}
@@ -49,7 +49,7 @@ const Icons = ({
       >
         <li>
           <Icon
-            className={`text-[22px] m-3 lg:m-4 lg:text-[30px] ${colorHover}`}
+            className={`text-[22px] m-3 lg:m-4 lg:text-[30px] text-neutral-800 dark:text-neutral-200 ${colorHover}`}
           />
         </li>
       </Link>
