@@ -5,7 +5,7 @@ const Footer = () => {
   const now = new Date().getFullYear();
   return (
     <>
-      <div className="flex justify-around mt-2 text-white bg-neutral-500 p-3 border-t-black dark:border-t-white">
+      <div className="flex justify-around text-white bg-neutral-500 p-3 border-t-black dark:border-t-white mt-auto">
         <p>{now} &copy; All Rights Reserved.</p>
         <p>
           Build with ❤ by{" "}
