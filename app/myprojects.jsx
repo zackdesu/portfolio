@@ -15,9 +15,9 @@ const MyProjects = () => {
           src={src}
           width={400}
           height={185}
-          style={{ objectFit: "contain" }}
+          style={{ objectFit: "cover", objectPosition: "top" }}
           alt={name}
-          className="rounded-xl max-h-[208px] mx-auto"
+          className="rounded-xl w-full max-w-[500px] mx-auto"
         />
         <div>
           <h3 className="text-xl mt-2">{name}</h3>
@@ -25,15 +25,16 @@ const MyProjects = () => {
         </div>
       </div>
       <Link href={href}>
-        <button className="px-5 py-2 bg-cyan-400 dark:bg-cyan-700 dark:hover:bg-cyan-500 hover:bg-cyan-500 rounded cursor-pointer my-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)] font-medium">
-          Details
-        </button>
+        <button>Details</button>
       </Link>
     </li>
   );
 
   return (
-    <div id="project" className="bg-neutral-200 dark:bg-neutral-950 p-5">
+    <div
+      id="project"
+      className="bg-neutral-200 dark:bg-neutral-950 p-5 mt-[78px]"
+    >
       <h1 className="text-center font-Josefin">Projects</h1>
       <ul className="flex justify-center w-5/6 mx-auto flex-wrap">
         <Template
