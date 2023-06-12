@@ -5,7 +5,7 @@
 
 @layer base {
     body {
-        @apply bg-neutral-100 text-black dark:bg-neutral-900 dark:text-white transition-colors duration-200
+        @apply bg-neutral-100 text-black dark:bg-neutral-900 dark:text-white transition-colors duration-200 min-h-[100vh] flex flex-col
     }
 
     html * {
@@ -43,12 +43,15 @@
     .bar3 {
         @apply dark:bg-[#c1c1c1]
     }
+    button {
+        @apply px-5 py-2 bg-cyan-400 dark:bg-cyan-700 dark:hover:bg-cyan-500 hover:bg-cyan-500 rounded cursor-pointer my-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)] font-medium
+    }
 }
 
 html,
 body {
     scroll-behavior: smooth;
-    scroll-padding-top: 74px
+    scroll-padding-top: 90px
 }
 
 .bar1,
