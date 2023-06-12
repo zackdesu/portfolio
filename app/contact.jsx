@@ -66,10 +66,10 @@ const Contact = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center my-5"
+      className="flex flex-col items-center justify-center px-5 py-10"
       id="contact"
     >
-      <h1 className="mb-3">Contact Me</h1>
+      <h1>Contact Me</h1>
       <form
         className="my-3 w-2/3 flex flex-col items-center"
         onSubmit={handleSubmit}
@@ -79,7 +79,7 @@ const Contact = () => {
         <TextAreaForm name="Message" />
         <button
           type="submit"
-          className="bg-cyan-400 dark:bg-cyan-700 rounded px-3 py-2 mt-3 shadow-[0_8px_30px_rgb(0,0,0,0.12)] font-medium tracking-wide"
+          className="bg-cyan-400 dark:bg-cyan-700 tracking-wide"
         >
           Submit
         </button>
