@@ -13,7 +13,7 @@ const Details = ({
     <>
       <div className="w-[100%] h-80 bg-black">
         <Image
-          src={img + ".png"}
+          src={"/img/project/" + img + ".png"}
           style={{
             objectFit: "cover",
             width: "100%",

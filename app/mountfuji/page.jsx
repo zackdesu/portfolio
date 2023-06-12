@@ -5,9 +5,10 @@ import Link from "next/link";
 const Page = () => {
   return (
     <Details
-      img="/img/project/mountfuji"
+      img="mountfuji"
       href="https://mountainfujisite.netlify.app"
       title="Mountain Fuji"
+      list={["HTML", "CSS", "JavaScript"]}
       desc={
         <>
           is the first website that my friend has paid for. He asked me to do
