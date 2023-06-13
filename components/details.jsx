@@ -27,24 +27,27 @@ const Details = ({
           priority
         />
       </div>
-      <div className="mx-20 mt-5">
+      <div className="mx-20 max-lg:mx-10 mt-5">
         <Link href="/#project">Back to Homepage</Link>
       </div>
-      <div className="mx-20 my-5 flex max-lg:flex-col max-lg:items-center max-lg:text-center">
+      <div className="mx-20 max-lg:mx-14 my-5 flex max-lg:flex-col max-lg:items-center max-lg:text-center">
         <div className="w-[60%] max-lg:w-full">
           <h1>{title}</h1>
-          <p className="my-3 text-lg">
+          <p className="my-3 text-lg max-md:text-base">
             <b>{title}</b>&nbsp;
             {desc}
           </p>
         </div>
         <div className="w-[40%] max-lg:w-full flex flex-col justify-around my-5">
-          <ul className="bg-neutral-200 text-start dark:bg-neutral-800 rounded-xl mx-auto p-5 font-medium">
-            <h2 className="mb-5">Tech I used</h2>
+          <ul className="bg-neutral-200 text-start dark:bg-neutral-800 rounded-xl mx-auto p-5 font-medium max-lg:w-[80%]">
+            <h2 className="mb-5 text-center">Used tech</h2>
             {list.map((e, i) => (
-              <li key={i} className="cursor-default">
+              <li
+                key={i}
+                className="cursor-default text-center list-disc w-1/2 mx-auto"
+              >
                 {" "}
-                &#9737; &nbsp; {e}
+                {e}
               </li>
             ))}
           </ul>
