@@ -69,7 +69,7 @@ const Contact = () => {
       className="flex flex-col items-center justify-center px-5 py-10"
       id="contact"
     >
-      <h1>Contact Me</h1>
+      <h1 className="font-Josefin">Contact Me</h1>
       <form
         className="my-3 w-2/3 flex flex-col items-center"
         onSubmit={handleSubmit}
