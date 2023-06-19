@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "project": "node --max-old-space-size=2048 ./node_modules/next/dist/bin/next"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
