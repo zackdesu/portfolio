@@ -39,12 +39,12 @@ const Details = ({
           </p>
         </div>
         <div className="w-[40%] max-lg:w-full flex flex-col justify-around my-5">
-          <ul className="bg-neutral-200 text-start dark:bg-neutral-800 rounded-xl mx-auto p-5 font-medium max-lg:w-[40%]">
+          <ul className="bg-neutral-200 text-start dark:bg-neutral-800 rounded-xl mx-auto p-5 font-medium">
             <h2 className="mb-5 text-center max-lg:text-3xl">Used tech</h2>
             {list.map((e, i) => (
               <li
                 key={i}
-                className="cursor-default list-disc w-1/4 mx-auto max-lg:text-lg"
+                className="cursor-default list-disc w-1/4 ms-5 max-lg:text-lg"
               >
                 {" "}
                 {e}
