@@ -5,7 +5,6 @@ const Page = () => {
   return (
     <Details
       img="kotadumai"
-      href="#!"
       title="Kota Dumai"
       list={["HTML", "CSS", "Bootstrap v.5.0"]}
       desc={

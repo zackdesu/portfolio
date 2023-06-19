@@ -5,7 +5,6 @@ const Page = () => {
   return (
     <Details
       img="calculator"
-      href="#!"
       title="Calculator"
       list={["HTML", "CSS", "JavaScript"]}
       desc={
