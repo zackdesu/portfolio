@@ -32,7 +32,7 @@ const Home = () => {
       <p className="max-w-xl xl:max-w-2xl mt-2 mx-8 text-center text-neutral-600 dark:text-neutral-300 xl:text-lg">
         I&apos;m a Front-end Web Developer. I&apos;m {years} years old. I just
         started programming for {months} months ago. Currently, I&apos;m
-        learning {whatDoYouLearnNow}, and doing this project.
+        learning {whatDoYouLearnNow}, and doing an online shop project.
       </p>
       <ul className="flex my-3">
         <Icons
