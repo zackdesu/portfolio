@@ -6,7 +6,7 @@ const Details = ({
   title = "lorem",
   desc = "loremipsumoadjsandasjdkasjdakjdajks",
   img,
-  href,
+  href = "#!",
   list = ["HTML"],
 }) => {
   return (
@@ -53,7 +53,16 @@ const Details = ({
           </ul>
           <div className="my-5 mx-auto text-center">
             <Link href={href} target={"_blank"}>
-              <button className="rounded-xl mx-auto">Go to page</button>
+              {href !== "#!" ? (
+                <button className="rounded-xl mx-auto">Go to page</button>
+              ) : (
+                <button
+                  className="rounded-xl mx-auto disabled:bg-cyan-500"
+                  disabled
+                >
+                  Go to page
+                </button>
+              )}
             </Link>
           </div>
         </div>
