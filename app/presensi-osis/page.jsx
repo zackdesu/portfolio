@@ -18,9 +18,9 @@ const Page = () => {
         <>
           This website was made for the presence system for my school council in
           SMKN 1 Dumai. This website also displays the agenda, council members,
-          calendar, gallery, and information about us. There's also a help page
-          for the first-time user who is going to use this website. This website
-          also features meeting details.
+          calendar, gallery, and information about us. There&apos;s also a help
+          page for the first-time user who is going to use this website. This
+          website also features meeting details.
         </>
       }
       href={"https://presensi-osis.vercel.app/"}
