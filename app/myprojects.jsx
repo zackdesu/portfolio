@@ -43,18 +43,18 @@ const MyProjects = () => {
         />
         <Template
           name="NuansaShop"
-          desc="This is my second project, NuansaShop. I do this project because my friend asked me to make this type of website. In here, I learn deeply about flexbox."
+          desc="NuansaShop, I do this project because my friend asked me to make this type of website. In here, I learn deeply about flexbox."
           href="nuansashop"
         />
         <Template
-          name="Calculator"
-          desc="This is my third project, I try to use object because my knowledge about Object is bad."
-          href="calculator"
+          name="Mount Fuji"
+          desc="Mount Fuji, my friend asked me to make a website with Mount Fuji theme. This is the first website which was bought by my friend."
+          href="mountfuji"
         />
         <Template
-          name="Mount Fuji"
-          desc="This is my fourth project, Mount Fuji. My friend asked me to make a website with Mount Fuji theme. This is the first website which was bought by my friend."
-          href="mountfuji"
+          name="Presensi Osis"
+          desc="Presensi Osis, this website was made for the presence system for my school council in SMKN 1 Dumai."
+          href="presensi-osis"
         />
       </ul>
     </div>
